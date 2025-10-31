@@ -33,7 +33,7 @@ export async function GET(request) {
   }
 
   // Return general profile details only
-  const { attendance, ...empDetails } = employee;
+  const { attendance , ...empDetails } = employee;
 
   return NextResponse.json(empDetails);
 }

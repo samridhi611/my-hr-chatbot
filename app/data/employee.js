@@ -6,7 +6,8 @@ export const employeeData = [
     "department": "Engineering",
     "email": "amit.sharma@company.com",
     "doj": "2021-05-12",
-    "leaveBalance": { "casual": 4, "sick": 6, "earned": 10 },
+    "totalLeaves": 20,
+    "usedLeaves": 10,
     "attendance": [
       { "date": "2025-10-23", "status": "Holiday" },
       { "date": "2025-10-24", "status": "Present" },
@@ -20,7 +21,8 @@ export const employeeData = [
     "department": "Human Resources",
     "email": "priya.patel@company.com",
     "doj": "2022-02-01",
-    "leaveBalance": { "casual": 2, "sick": 5, "earned": 8 },
+    "totalLeaves": 15,
+    "usedLeaves": 7,
     "attendance": [
       { "date": "2025-10-23", "status": "Holiday" },
       { "date": "2025-10-24", "status": "Present" },
@@ -34,7 +36,8 @@ export const employeeData = [
     "department": "Engineering",
     "email": "ravi.kumar@company.com",
     "doj": "2020-09-20",
-    "leaveBalance": { "casual": 5, "sick": 4, "earned": 12 },
+    "totalLeaves": 18,
+    "usedLeaves": 9,
     "attendance": [
       { "date": "2025-10-23", "status": "Holiday" },
       { "date": "2025-10-24", "status": "Absent" },
@@ -48,7 +51,8 @@ export const employeeData = [
     "department": "Engineering",
     "email": "neha.singh@company.com",
     "doj": "2023-01-10",
-    "leaveBalance": { "casual": 3, "sick": 2, "earned": 5 },
+    "totalLeaves": 12,
+    "usedLeaves": 5,
     "attendance": [
       { "date": "2025-10-23", "status": "Holiday" },
       { "date": "2025-10-24", "status": "Present" },
@@ -62,11 +66,87 @@ export const employeeData = [
     "department": "Finance",
     "email": "arjun.mehta@company.com",
     "doj": "2019-03-14",
-    "leaveBalance": { "casual": 6, "sick": 3, "earned": 15 },
+    "totalLeaves": 22,
+    "usedLeaves": 8,
     "attendance": [
       { "date": "2025-10-23", "status": "Holiday" },
       { "date": "2025-10-24", "status": "Present" },
       { "date": "2025-10-25", "status": "Absent" }
     ]
+  },
+  {
+    "employeeId": "EMP006",
+    "name": "Sanya Verma",
+    "designation": "Marketing Manager",
+    "department": "Marketing",
+    "email": "sanya.verma@company.com",
+    "doj": "2020-11-08",
+    "totalLeaves": 18,
+    "usedLeaves": 6,
+    "attendance": [
+      { "date": "2025-10-23", "status": "Holiday" },
+      { "date": "2025-10-24", "status": "Present" },
+      { "date": "2025-10-25", "status": "Present" }
+    ]
+  },
+  {
+    "employeeId": "EMP007",
+    "name": "Rohit Das",
+    "designation": "QA Engineer",
+    "department": "Engineering",
+    "email": "rohit.das@company.com",
+    "doj": "2021-04-19",
+    "totalLeaves": 16,
+    "usedLeaves": 5,
+    "attendance": [
+      { "date": "2025-10-23", "status": "Holiday" },
+      { "date": "2025-10-24", "status": "Absent" },
+      { "date": "2025-10-25", "status": "Present" }
+    ]
+  },
+  {
+    "employeeId": "EMP008",
+    "name": "Meera Iyer",
+    "designation": "Data Analyst",
+    "department": "Business Intelligence",
+    "email": "meera.iyer@company.com",
+    "doj": "2022-09-05",
+    "totalLeaves": 15,
+    "usedLeaves": 5,
+    "attendance": [
+      { "date": "2025-10-23", "status": "Holiday" },
+      { "date": "2025-10-24", "status": "Present" },
+      { "date": "2025-10-25", "status": "Present" }
+    ]
+  },
+  {
+    "employeeId": "EMP009",
+    "name": "Ankit Raj",
+    "designation": "DevOps Engineer",
+    "department": "Engineering",
+    "email": "ankit.raj@company.com",
+    "doj": "2018-12-15",
+    "totalLeaves": 20,
+    "usedLeaves": 11,
+    "attendance": [
+      { "date": "2025-10-23", "status": "Holiday" },
+      { "date": "2025-10-24", "status": "Present" },
+      { "date": "2025-10-25", "status": "Absent" }
+    ]
+  },
+  {
+    "employeeId": "EMP010",
+    "name": "Kavita Joshi",
+    "designation": "Product Manager",
+    "department": "Product",
+    "email": "kavita.joshi@company.com",
+    "doj": "2019-07-22",
+    "totalLeaves": 19,
+    "usedLeaves": 9,
+    "attendance": [
+      { "date": "2025-10-23", "status": "Holiday" },
+      { "date": "2025-10-24", "status": "Present" },
+      { "date": "2025-10-25", "status": "Present" }
+    ]
   }
-]
+];
