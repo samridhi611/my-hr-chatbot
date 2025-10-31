@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { leaveBalanceData } from "../../data/hrData";
+import {employeeData} from "../../data/employee";
 
 // GET /api/leave-balance?employeeId=E001
 export async function GET(req) {
@@ -17,7 +17,7 @@ export async function GET(req) {
       );
     }
 
-    const record = leaveBalanceData.find(
+    const record = employeeData.find(
       (item) => item.employeeId === employeeId
     );
 

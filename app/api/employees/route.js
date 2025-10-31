@@ -1,6 +1,6 @@
 // File: app/api/employee/route.ts
 import { NextResponse } from "next/server";
-import employees from "../../data/employees.json";
+import {employeeData} from "../../data/employee";
 
 /**
  * GET /api/employee?employeeId=EMP001
@@ -22,10 +22,10 @@ export async function GET(request) {
   let employee;
 
   if (empId) {
-    employee = employees.find(emp => emp.employeeId === empId);
+    employee = employeeData.find(emp => emp.employeeId === empId);
   } else if (name) {
     const lowerName = name.toLowerCase();
-    employee = employees.find(emp => emp.name.toLowerCase() === lowerName);
+    employee = employeeData.find(emp => emp.name.toLowerCase() === lowerName);
   }
 
   if (!employee) {
