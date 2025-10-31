@@ -18,7 +18,7 @@ export async function GET(req) {
     }
 
     const record = employeeData.find(
-      (item) => item.id === id
+      (item) => item.employeeId === id
     );
 
     if (!record) {

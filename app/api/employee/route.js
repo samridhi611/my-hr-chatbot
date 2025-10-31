@@ -22,7 +22,7 @@ export async function GET(request) {
   let employee;
 
   if (empId) {
-    employee = employeeData.find(emp => emp.id === empId);
+    employee = employeeData.find(emp => emp.employeeId === empId);
   } else if (name) {
     const lowerName = name.toLowerCase();
     employee = employeeData.find(emp => emp.name.toLowerCase() === lowerName);
