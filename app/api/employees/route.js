@@ -1,6 +1,6 @@
 // File: app/api/employee/route.ts
 import { NextResponse } from "next/server";
-import employees from "@/data/employees.json";
+import employees from "../../data/employees.json";
 
 /**
  * GET /api/employee?employeeId=EMP001

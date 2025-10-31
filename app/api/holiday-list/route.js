@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { holidayList } from "@/data/holidays";
+import { holidayList } from "../../data/holidays";
 
 // GET /api/holiday-list
 export async function GET(req) {

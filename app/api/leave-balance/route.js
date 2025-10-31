@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { leaveBalanceData } from "@/data/hrData";
+import { leaveBalanceData } from "../../data/hrData";
 
 // GET /api/leave-balance?employeeId=E001
 export async function GET(req) {
