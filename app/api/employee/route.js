@@ -3,18 +3,18 @@ import { NextResponse } from "next/server";
 import {employeeData} from "../../data/employee";
 
 /**
- * GET /api/employee?employeeId=EMP001
+ * GET /api/employee?id=EMP001
  * GET /api/employee?name=Priya%20Patel
  * Returns employee profile details
  */
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
-  const empId = searchParams.get("employeeId");
+  const empId = searchParams.get("id");
   const name = searchParams.get("name");
 
   if (!empId && !name) {
     return NextResponse.json(
-      { error: "Either employeeId or name is required" },
+      { error: "Either id or name is required" },
       { status: 400 }
     );
   }
@@ -22,7 +22,7 @@ export async function GET(request) {
   let employee;
 
   if (empId) {
-    employee = employeeData.find(emp => emp.employeeId === empId);
+    employee = employeeData.find(emp => emp.id === empId);
   } else if (name) {
     const lowerName = name.toLowerCase();
     employee = employeeData.find(emp => emp.name.toLowerCase() === lowerName);
