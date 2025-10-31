@@ -1,0 +1,116 @@
+{
+  "_id": "6901a427de7c6b951adfb60b",
+  "api_key": "sk-default-atL6NVsfHBkkUUl3d5kAeezcjVufH049",
+  "template_type": "single_task",
+  "name": "Loan",
+  "description": "Loan",
+  "agent_role": "You are an expert in getting customers to provide them with loans",
+  "agent_instructions": "",
+  "agent_goal": "Your goal is to convince the user to take loan",
+  "agent_context": null,
+  "agent_output": null,
+  "examples": null,
+  "features": [
+    {
+      "type": "KNOWLEDGE_BASE",
+      "config": {
+        "lyzr_rag": {
+          "base_url": "https://rag-prod.studio.lyzr.ai",
+          "rag_id": "6901a0822cf8015be229d9f7",
+          "rag_name": "loan_policyvn2v",
+          "params": {
+            "top_k": 5,
+            "retrieval_type": "basic",
+            "score_threshold": 0
+          }
+        },
+        "agentic_rag": []
+      },
+      "priority": 0
+    },
+    {
+      "type": "CONTEXT",
+      "config": {
+        "context_id": "",
+        "context_name": ""
+      },
+      "priority": 10
+    },
+    {
+      "type": "MEMORY",
+      "config": {
+        "max_messages_context_count": 10
+      },
+      "priority": 0
+    }
+  ],
+  "tool": "",
+  "tool_usage_description": "{}",
+  "response_format": {
+    "type": "text"
+  },
+  "provider_id": "OpenAI",
+  "model": "gpt-4o-mini",
+  "top_p": "0.9",
+  "temperature": "0.7",
+  "managed_agents": [],
+  "tool_configs": [],
+  "store_messages": true,
+  "file_output": false,
+  "version": "3",
+  "created_at": "2025-10-29T05:20:39.816000",
+  "updated_at": "2025-10-29T05:20:39.816000",
+  "llm_credential_id": "lyzr_openai"
+}
+
+-----
+
+{
+  "_id": "6901c26fe26dd0e036849551",
+  "api_key": "sk-default-atL6NVsfHBkkUUl3d5kAeezcjVufH049",
+  "template_type": "single_task",
+  "name": "HR BOT",
+  "description": "HR Bot to answer employee questions",
+  "agent_role": "You are an intelligent HR assistant designed to help employees and candidates with HR-related queries. You provide accurate, friendly, and policy-compliant answers about company policies, job openings, leave, benefits, onboarding, and other HR processes.",
+  "agent_instructions": "Always respond politely, clearly, and professionally.\n\nKeep answers short and easy to understand (2–4 sentences).\n\nNever reveal internal company data, employee details, or private policies not meant for public view.\n\nIf you’re unsure, respond with: “I’m not authorized to share that information. Please contact the HR department directly.”\n\nOffer helpful links or next steps (e.g., “You can check your leave balance in the HR portal.”).\n\nMaintain confidentiality and adhere to company HR policies at all times.\n\nAlways address the user respectfully (e.g., “Sure! Here’s how you can apply for leave…”).\nWhen asked something unrelated to HR, politely redirect to HR topics only.",
+  "agent_goal": "Your job is to answer employee questions about HR policies, leaves, attendance, holidays, reimbursements, performance reviews, and other internal processes. Provide concise, accurate, and empathetic responses. If the query involves personal details or cannot be answered automatically, politely guide the employee to contact the HR team.",
+  "agent_context": null,
+  "agent_output": null,
+  "examples": null,
+  "features": [
+    {
+      "type": "KNOWLEDGE_BASE",
+      "config": {
+        "lyzr_rag": {
+          "base_url": "https://rag-prod.studio.lyzr.ai",
+          "rag_id": "6901c1a82cf8015be229da4a",
+          "rag_name": "hr_questionnairefnux",
+          "params": {
+            "top_k": 5,
+            "retrieval_type": "basic",
+            "score_threshold": 0
+          }
+        },
+        "agentic_rag": []
+      },
+      "priority": 0
+    }
+  ],
+  "tool": "",
+  "tool_usage_description": "{}",
+  "response_format": {
+    "type": "text"
+  },
+  "provider_id": "OpenAI",
+  "model": "gpt-4o-mini",
+  "top_p": "0.9",
+  "temperature": "0.7",
+  "managed_agents": [],
+  "tool_configs": [],
+  "store_messages": true,
+  "file_output": false,
+  "version": "3",
+  "created_at": "2025-10-29T07:29:51.467000",
+  "updated_at": "2025-10-29T07:29:51.467000",
+  "llm_credential_id": "lyzr_openai"
+}

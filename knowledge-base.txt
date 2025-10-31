@@ -1,0 +1,14 @@
+{
+  "id": "6901a0822cf8015be229d9f7",
+  "user_id": "sk-default-atL6NVsfHBkkUUl3d5kAeezcjVufH049",
+  "llm_credential_id": "lyzr_openai",
+  "embedding_credential_id": "lyzr_openai",
+  "vector_db_credential_id": "lyzr_qdrant",
+  "description": "loan policy",
+  "collection_name": "loan_policyvn2v",
+  "llm_model": "gpt-4o-mini",
+  "embedding_model": "text-embedding-ada-002",
+  "vector_store_provider": "Qdrant [Lyzr]",
+  "semantic_data_model": false,
+  "meta_data": {}
+}
